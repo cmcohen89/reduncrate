@@ -1,0 +1,34 @@
+.profile-nav-container {
+    max-width: 960px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px 0;
+    border-top: .5px solid rgba(0, 0, 0, 0.422);;
+    border-bottom: .5px solid rgba(0, 0, 0, 0.422);
+}
+
+.profile-nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-nav-list-item {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.profile-nav-list-item:hover {
+    text-decoration: underline;
+}
+
+.profile-nav-sizer {
+    margin: 0 20px;
+    width: 160px;
+    text-align: center;
+}

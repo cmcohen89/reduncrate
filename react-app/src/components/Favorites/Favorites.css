@@ -1,0 +1,77 @@
+.user-favorites-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: auto;
+}
+
+.user-favorites {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top: 40px;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+  max-width: 960px;
+  margin-bottom: 137px;
+}
+
+.product-img {
+  width: 468px;
+  height: 313px;
+  margin-bottom: -5px;
+}
+
+.stash-title {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.empty-message {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 220px 0;
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.stash-product-name {
+  margin-bottom: 5px;
+  padding-top: 20px;
+}
+
+.outer a {
+  text-decoration: none;
+  color: black;
+}
+
+.outer {
+  border: 1px solid rgb(128, 128, 128, 0.3);
+  margin-top: 15px;
+  margin-bottom: 80px;
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+  padding-bottom: 20px;
+}
+
+.no-favorites-msg {
+  text-align: center;
+  margin: 40px 0;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 22px;
+}
+
+@media (max-width: 1000px) {
+  .user-favorites {
+    grid-template-columns: auto;
+  }
+}

@@ -1,0 +1,54 @@
+/* TODO Add site wide styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+height {
+  min-height: 100vh;
+}
+
+body {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Domine', serif;
+font-family: 'Oswald', sans-serif; */
+
+/* ::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+} */

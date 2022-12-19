@@ -1,0 +1,26 @@
+.category-page-name {
+  font-family: "Domine", serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.category-name-container {
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding: 17px;
+  padding-bottom: 15px;
+  text-transform: capitalize;
+  border-bottom: .5px solid rgba(0, 0, 0, 0.422);
+}
+
+.featured-product-category a {
+  color: #989898;
+  text-decoration: none;
+}
+
+.featured-product-buy-link a {
+  color: #ae9e85;
+}

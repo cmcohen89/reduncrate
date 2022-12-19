@@ -1,0 +1,156 @@
+/* HIDE NUMBER INPUT SPINNERS */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* HIDE NUMBER INPUT SPINNERS - FIREFOX */
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.category-input {
+  color: #777;
+  text-align: left;
+}
+
+.detailed-description-input {
+  resize: none;
+  height: 5em;
+}
+
+.detailed-description-input::placeholder {
+  padding: 1.6em 0;
+}
+
+.detailed-description-input::-webkit-scrollbar {
+  display: none;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+  row-gap: 0.75em;
+}
+
+.product-form {
+  max-width: 641px;
+  width: 44%;
+}
+
+.product-form-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.product-form-header {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+.product-form-header-errors {
+  color: red;
+  display: flex;
+  flex-direction: column;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  gap: 0.5em;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+  max-width: 641px;
+  padding-bottom: 10px;
+}
+
+.product-form-submit {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 1em;
+  margin-top: 0.75em;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+.title-container,
+.description-container,
+.detailed-description-container,
+.category-container,
+.price-container,
+.preview-img-container {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.title-input,
+.description-input,
+.detailed-description-input,
+.category-input,
+.price-input,
+.preview-img-input {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  border: none;
+  width: 50%;
+}
+
+.title-input:focus,
+.description-input:focus,
+.detailed-description-input:focus,
+.category-input:focus,
+.price-input:focus,
+.preview-img-input:focus {
+  outline: none;
+  width: 50%;
+}
+
+label {
+  font-weight: 500;
+}
+
+.category-input {
+  margin-right: 3px;
+}
+
+@media (max-width: 1020px) {
+  .product-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 780px) {
+  .product-form-container {
+    padding: 20px;
+  }
+  .product-form-header {
+    margin-top: 60px;
+    align-items: center;
+  }
+
+  .back-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-form {
+    width: 100%;
+  }
+}

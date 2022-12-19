@@ -1,0 +1,202 @@
+.splash-page-header {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  background-color: black;
+  height: 146px;
+  color: white;
+}
+
+.splash-page-top-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.header-top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid white;
+}
+
+.header-top-bar-left {
+  letter-spacing: 0;
+  width: 110px;
+}
+
+.header-link {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.login-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.profile-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logout-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-left: -13px;
+}
+
+.header-bottom-bar {
+  display: flex;
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  padding-top: 22px;
+}
+
+.reduncrate-logo {
+  height: 90px;
+}
+
+.splash-header-icons-wrapper {
+  position: relative;
+}
+
+.splash-header-icons {
+  position: absolute;
+  left: 130px;
+  font-size: 17px;
+  padding-top: 65px;
+  width: 100px;
+}
+
+.header-magnifying-glass {
+  color: white;
+  margin-right: 30px;
+}
+
+.magnifying-glass-link {
+  margin-right: 30px;
+  color: white;
+}
+
+.nav-bar-categories {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  max-width: 660px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-bar-categories a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-bar-subcategories a {
+  letter-spacing: 0;
+  text-decoration: none;
+  color: #ae9e85;
+}
+
+.nav-bar-categories-border {
+  max-width: 960px;
+  margin: 0 auto;
+  border-bottom: .5px solid rgba(0, 0, 0, 0.422);
+  margin-bottom: 2px;
+}
+
+.nav-bar-subcategories {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 620px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  color: #ae9e85;
+  font-size: 13px;
+  padding: 12px 0;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.nav-bar-subcategories-border {
+  max-width: 960px;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+}
+
+.nav-bar-crate {
+  color: white;
+}
+
+.nav-bar-crate-button {
+    font-size: 18px;
+    background-color: black;
+    color: white;
+}
+
+.nav {
+    margin-top: 20px;
+}
+
+.cart-item-count-splash {
+  position: absolute;
+  text-align: center;
+  right: 29px;
+  bottom: 14px;
+  width: 15px;
+  height: 15px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 9px;
+  background-color: #E74E3C;
+  border-radius: 100%;
+}
+
+.cart-item-count-single {
+  position: absolute;
+  text-align: center;
+  right: -8px;
+  bottom: 15px;
+  width: 15px;
+  height: 15px;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 9px;
+  background-color: #E74E3C;
+  border-radius: 100%;
+}
+
+.no-show-meet {
+  display: none;
+}
+
+.meet-button {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+}

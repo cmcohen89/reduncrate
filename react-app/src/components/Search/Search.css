@@ -1,0 +1,159 @@
+.search-area {
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.search-results a {
+  text-decoration: none;
+  color: black;
+}
+
+.search-result img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.search-result {
+  border: 1px solid #c7c7c7;
+  height: auto;
+  width: 47.9%;
+  padding-bottom: 14px;
+  margin: 10px;
+}
+
+.search-wrapper {
+  height: 100%;
+  min-height: 100vh;
+}
+.search-result-details {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  max-height: 209px;
+  height: auto;
+  min-height: 70px;
+  padding: 0 20px;
+  margin-top: 12px;
+  text-transform: uppercase;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 960px;
+  width: 50%;
+  margin-top: 25px;
+}
+
+.search-title {
+  text-align: center;
+  font-family: "Domine", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  margin-bottom: 17px;
+}
+.search-field {
+  padding: 16px;
+  position: relative;
+  width: 100%;
+  border: 1px solid black;
+  vertical-align: middle;
+}
+
+.searchbar {
+  border: 0;
+  width: 70%;
+  margin: 4px;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #555555;
+  outline: none;
+  display: block;
+}
+
+.searchbar-search {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+  float: left;
+  width: 30%;
+  padding: 4px;
+}
+
+.search-form button {
+  margin-top: 23px;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  padding: 4px 12px;
+  height: 36px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.no-results {
+  text-align: center;
+  font-family: "Domine", serif;
+  width: 100%;
+}
+
+@media (max-width: 980px) {
+  .search-results {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .search-result {
+    width: 47%;
+  }
+
+  .search-result-details {
+    margin-top: 10px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 780px) {
+  .search-area {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .search-result {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .search-result-details {
+    margin-top: 15px;
+  }
+
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+    margin-top: 25px;
+  }
+}

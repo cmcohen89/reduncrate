@@ -1,0 +1,122 @@
+.supply-nav-bar {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.topbar-wrapper {
+  width: 100%;
+  height: 43px;
+  background-color: black;
+}
+
+.topbar {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.5px;
+  height: 100%;
+  font-size: 12px;
+  font-weight: 900;
+  padding-bottom: 2px;
+}
+
+.reduncrate-logo-mini {
+  width: 120px;
+  margin-top: 3px;
+  margin-right: -30px;
+}
+
+.topbar-left {
+  font-size: 20px;
+  font-family: "Domine", serif;
+}
+
+.topbar-left a {
+  color: white;
+  text-decoration: none;
+}
+
+.topbar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.topbar li {
+  margin: 0 13px;
+  letter-spacing: 1px;
+}
+
+.supply-icons-alt {
+  display: none;
+}
+
+.cart-item-count-single-alt {
+  position: absolute;
+  text-align: center;
+  right: 10px;
+  bottom: 25px;
+  width: 15px;
+  height: 15px;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 9px;
+  background-color: #E74E3C;
+  border-radius: 100%;
+}
+
+@media (max-width: 980px) {
+  .supply-nav-rightbtns {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+  }
+
+  .topbar-left {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 780px) {
+  .supply-icons-alt {
+    color: white;
+    display: inline-block;
+  }
+
+  .supply-icons-alt .supply-header-crate-button {
+    background-color: black;
+    color: white;
+    margin-left: 15px;
+  }
+
+  .supply-icons-alt a {
+    color: white;
+    background-color: black;
+    margin-left: 5px;
+  }
+
+  .topbar-left {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .supply-nav-rightbtns {
+    margin: 0;
+    padding-right: 20px;
+  }
+
+  .topbar-middle {
+    display: none;
+  }
+  .supply-nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+  }
+}

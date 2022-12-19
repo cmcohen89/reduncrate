@@ -1,0 +1,129 @@
+.supply-header {
+  width: 100%;
+}
+
+.supply-header-title {
+  position: relative;
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 28px 0 33px 0;
+}
+
+.supply-header-title h1 {
+  cursor: pointer;
+}
+
+.supply-icons {
+  position: absolute;
+  right: 0;
+}
+
+.supply-icons .fa-magnifying-glass {
+  margin-right: 30px;
+  color: black;
+  font-size: 18px;
+}
+
+sup {
+  font-size: 15px;
+  position: absolute;
+  right: -17px;
+  top: 7px;
+  font-family: "Oswald", sans-serif;
+}
+
+.supply-header h1 {
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  font-size: 34px;
+}
+
+.supply-header p {
+  max-width: 350px;
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Domine", serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  margin-top: 0;
+}
+
+.supply-header svg {
+  margin-left: 30px;
+}
+
+.categorybar-top ul,
+.categorybar-bottom ul {
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  display: flex;
+  letter-spacing: 0.05rem;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.categorybar-bottom li:hover,
+.categorybar-top li:hover,
+.fa-solid:hover {
+  cursor: pointer;
+}
+
+.categorybar-top {
+  width: 100%;
+  max-width: 960px;
+  border-top: 1px solid black;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.categorybar-top li {
+  color: #ae9e85;
+}
+
+.categorybar-bottom {
+  width: 100%;
+  max-width: 960px;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+  margin-bottom: 22px;
+}
+
+.supply-header-categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav-surplus {
+  color: #e74e3c !important;
+}
+
+.supply-header-crate-button {
+  background-color: white;
+  border: none;
+  font-size: 18px;
+}
+
+@media (max-width: 780px) {
+  .supply-header {
+    display: none;
+  }
+}
+
+@media (max-width: 980px) {
+  .supply-header {
+    padding: 0 20px;
+  }
+}

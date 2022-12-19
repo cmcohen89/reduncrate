@@ -1,0 +1,36 @@
+.bottom-footer-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 20px;
+}
+
+.footer-logo {
+  width: 140px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.copyright-statement {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #666;
+}
+
+.copyright-statement {
+  margin-bottom: 20px;
+}
+
+.copyright-section {
+  max-width: 100%;
+}
+
+.payment-info {
+  width: 100%;
+  max-width: 250px;
+}

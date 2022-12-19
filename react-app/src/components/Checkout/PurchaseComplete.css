@@ -1,0 +1,17 @@
+.purchase-complete-page {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.purchase-title {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}

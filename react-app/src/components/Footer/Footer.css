@@ -1,0 +1,56 @@
+.footer-wrapper {
+  background-image: url("https://uncrate.com/img/lambo@2x.jpg");
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-top: 20px;
+  position: relative;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.footer {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 0 20px;
+}
+
+@media (min-width: 1021px) {
+  .footer-wrapper {
+    background-size: 2100px 800px;
+  }
+
+  .footer {
+    padding-top: 70px;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 639px) {
+  .footer {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1020px) {
+  .footer-wrapper {
+    background-image: url("https://uncrate.com/img/lambo.jpg");
+    background-size: contain;
+  }
+}
+
+@media (max-wdith: 1020px) {
+  .footer-wrapper {
+    position: relative;
+    bottom: 0;
+    background-size: 500px 500px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-wrapper {
+    background-image: none;
+  }
+}

@@ -1,0 +1,36 @@
+.meet-team-links-wrapper {
+    background-color: transparent;
+    position: relative;
+    top: 22px;
+    right: 13px;
+}
+
+.meet-team-links {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.one-meet-team-link {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meet-team-icons {
+    text-align: right;
+}
+
+.meet-team-icon {
+    color: white;
+    padding-left: 10px;
+}
+
+.meet-team-icon:hover {
+    color: #c7c7c7;
+}

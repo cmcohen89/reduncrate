@@ -1,0 +1,287 @@
+.footer-module-container {
+  max-width: 960px;
+  width: 100%;
+  display: inline-block;
+}
+
+.upper-footer-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.subscribe-module {
+  /* height: 210px; */
+}
+
+.subscribe-module {
+  color: white;
+  float: right;
+  text-align: center;
+  width: 34%;
+}
+
+.subscribe-module h1 {
+  font-family: "Domine", serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.subscribe-module p {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.subscribe-module input {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  outline: 0;
+  border: 0;
+}
+
+.subscribe-module input::placeholder {
+  font-size: 12px;
+  color: grey;
+  font-weight: 700;
+  line-height: 1.5;
+  height: 36px;
+  letter-spacing: 0.1px;
+}
+
+.subscribe-module button {
+  width: 100%;
+  color: white;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  padding: 0 14px;
+  height: 36px;
+  margin-top: 15px;
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.footer-module-container .quote-module h2 {
+  font-family: "Domine", serif;
+  color: #ae9e85;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.footer-module-container .quote-module {
+  margin-top: 93px;
+  display: flex;
+}
+
+.quote-module {
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.quote-module-left {
+  float: left;
+  width: 65%;
+  padding-right: 40px;
+  margin: 30px 0 23px;
+}
+
+.quote-module-left p {
+  color: #ae9e85;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.quote-module-right {
+  float: right;
+  width: 35%;
+  margin: 20px 0;
+  display: flex;
+}
+
+.quote-module-right-left {
+  width: 47%;
+  margin-left: 10px;
+  float: left;
+}
+
+.quote-module-right-left img {
+  max-width: 100%;
+}
+
+.quote-module-right-right {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  float: right;
+  width: 50%;
+}
+
+.quote-module-right-right img {
+  width: auto;
+
+  border: 1px solid #666;
+}
+
+.app-store-icon {
+  margin-bottom: 15px;
+}
+
+.email-input-wrapper-red {
+  padding: 0;
+  border: 2px solid #e85c41;
+}
+
+.email-input-wrapper-black {
+  border: 2px solid black;
+}
+
+.email-input-wrapper {
+  border: 0;
+}
+
+.email-input-wrapper-red ul {
+  list-style-type: none;
+}
+
+.email-error-msg {
+  width: 100%;
+  color: white;
+  background-color: #e85c41;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  padding: 5px;
+  font-weight: 600;
+}
+.subscribe-msg {
+  width: 100%;
+  color: white;
+
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  padding: 5px;
+  font-weight: 600;
+}
+
+@media (max-width: 1020px) {
+  .subscribe-module {
+    display: inline-block;
+    padding-top: 30%;
+    width: 100%;
+  }
+
+  .subscribe-module h1 {
+    padding: 0 5%;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .subscribe-module-wrapper {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  .subscribe-module button {
+    background-color: #666;
+    width: 100%;
+  }
+
+  .quote-module {
+    flex-direction: column;
+    padding-top: 13px;
+    border-top: 1px solid #666;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 0px !important;
+  }
+
+  .quote-module-left {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 14px;
+    padding: 0 20px;
+    max-width: 680px;
+  }
+
+  .quote-module-left h2 {
+    font-size: 21px !important;
+    font-weight: 500 !important;
+    line-height: 1.3 !important;
+  }
+
+  .quote-module-right-left {
+    display: none;
+  }
+
+  .quote-module-right {
+    max-width: 100%;
+    width: 90%;
+    float: none;
+    padding: 0;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .quote-module-right-right {
+    width: 40%;
+    padding: 0;
+    flex: 1 1 40%;
+    max-width: 440px;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+
+  .quote-module-right-right img {
+    width: 48%;
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .quote-module-right-right img:first-child {
+    margin-right: 4%;
+  }
+}
+
+@media (max-width: 640px) {
+  .subscribe-module-wrapper {
+    padding: 0 2px;
+  }
+  .subscribe-module {
+    padding: 20px;
+    padding-bottom: 0;
+  }
+
+  .quote-module h2 {
+    padding: 0;
+  }
+
+  .quote-module-right {
+    width: 100%;
+  }
+}

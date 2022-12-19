@@ -1,0 +1,175 @@
+.lower-footer-container {
+  padding-top: 20px;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.lower-footer-link-list {
+  text-align: center;
+}
+
+.lower-footer-link-list ul,
+.lower-footer-link-list-team ul {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.meet-team-ul {
+  justify-content: center;
+  align-items: center;
+}
+
+.lower-footer-link-list li {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.lower-footer-link-list-team li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lower-footer-link-list-title {
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  color: #666;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.dev-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dev-link {
+  color: white;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.dev-link:hover {
+  color: #ae9e85;
+}
+
+.lower-footer-link-list a,
+.lower-footer-link-list-team a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.lower-footer-link-list a:hover {
+  color: #ae9e85;
+}
+
+@media (max-width: 1020px) {
+  .lower-footer-container {
+    margin: 0 40px;
+  }
+}
+
+@media (max-width: 725px) {
+  .lower-footer-container {
+    padding-top: 20px;
+    border-top: 1px solid #666;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .lower-footer-link-list {
+    width: 120px;
+    text-align: center;
+  }
+
+  .lower-footer-link-list-team {
+    width: 140px;
+  }
+
+  .lower-footer-link-list ul,
+  .lower-footer-link-list-team ul {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .meet-team-ul {
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .lower-footer-link-list li,
+  .lower-footer-link-list-team li {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 3px;
+  }
+
+  .meet-team-ul li {
+    justify-content: space-between;
+  }
+
+  .lower-footer-link-list-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    color: #666;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .dev-links {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .dev-link {
+    color: white;
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  .lower-footer-link-list-divider {
+    display: none;
+  }
+
+  .list-links {
+    margin-right: 20px;
+  }
+}
