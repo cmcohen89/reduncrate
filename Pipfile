@@ -29,6 +29,7 @@ pytest = "*"
 pycodestyle = "*"
 pylint = "*"
 rope = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
