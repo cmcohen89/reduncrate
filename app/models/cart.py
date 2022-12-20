@@ -11,7 +11,7 @@ class Cart(db.Model):
         __table_args__ = {'schema': SCHEMA}
 
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod(("users.id"))), nullable=False)  # FOREIGN KEY EVEN THOUGH 1:1?
+    user_id = db.Column(db.Integer, db.ForeignKey(("users.id")), nullable=False)  # FOREIGN KEY EVEN THOUGH 1:1?
     total = db.Column(db.Integer, nullable=False)
     purchased = db.Column(db.Boolean, default=False)
 
@@ -46,8 +46,8 @@ class CartItem(db.Model):
         __table_args__ = {'schema': SCHEMA}
 
     id = db.Column(db.Integer, primary_key=True)
-    cart_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod(("carts.id"))), nullable=False)
-    product_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod(("products.id"))), nullable=False)  # FOREIGN KEY EVEN THOUGH 1:1?
+    cart_id = db.Column(db.Integer, db.ForeignKey(("carts.id")), nullable=False)
+    product_id = db.Column(db.Integer, db.ForeignKey(("products.id")), nullable=False)  # FOREIGN KEY EVEN THOUGH 1:1?
     quantity = db.Column(db.Integer, nullable=False)
 
     # RELATIONSHIPS:

@@ -15,8 +15,8 @@ class Product(db.Model):
     title = db.Column(db.String(255), nullable=False)
     description = db.Column(db.String(2000))
     detailed_description = db.Column(db.String(5000))
-    category_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod(("categories.id"))), nullable=False)
-    owner_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod(("users.id"))), nullable=False)
+    category_id = db.Column(db.Integer, db.ForeignKey(("categories.id")), nullable=False)
+    owner_id = db.Column(db.Integer, db.ForeignKey(("users.id")), nullable=False)
     price = db.Column(db.Integer, nullable=False)
     preview_img_id = db.Column(db.Integer, nullable=False)
     cart_img_url = db.Column(db.String(1000))
@@ -90,7 +90,7 @@ class ProductImage(db.Model):
         __table_args__ = {'schema': SCHEMA}
 
     id = db.Column(db.Integer, primary_key=True)
-    product_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod(("products.id"))), nullable=False)
+    product_id = db.Column(db.Integer, db.ForeignKey(("products.id")), nullable=False)
     url = db.Column(db.String(1500), nullable=False)
 
     # RELATIONSHIPS:
