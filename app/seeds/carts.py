@@ -50,9 +50,9 @@ def seed_carts():
 # sqlite3 in development you need to instead use DELETE to remove all data and
 # it will reset the primary keys for you as well.
 def undo_carts():
-    if environment == "production":
-        db.session.execute(f"TRUNCATE table {SCHEMA}.carts RESTART IDENTITY CASCADE;")
-    else:
+    # if environment == "production":
+    #     db.session.execute(f"TRUNCATE table {SCHEMA}.carts RESTART IDENTITY CASCADE;")
+    # else:
         db.session.execute("DELETE FROM carts")
 
-    db.session.commit()
+        db.session.commit()
