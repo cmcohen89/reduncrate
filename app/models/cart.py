@@ -20,7 +20,7 @@ class Cart(db.Model):
     cart_items = db.relationship("CartItem", back_populates="item_cart")
 
     # cart_user <--> user_cart
-    cart_user = db.relationship("User", back_populates="user_cart")
+    # cart_user = db.relationship("User", back_populates="user_cart")
 
     def to_dict(self):
         return {
@@ -29,7 +29,7 @@ class Cart(db.Model):
             "total": self.total,
             "purchased": self.purchased,
             "cartItems": {item.to_dict()["id"]: item.to_dict() for item in self.cart_items},
-            "cartUser": self.cart_user.to_dict()
+            # "cartUser": self.cart_user.to_dict()
         }
 
     def __repr__(self):
