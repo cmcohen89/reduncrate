@@ -27,8 +27,8 @@ def upgrade():
     sa.PrimaryKeyConstraint('id')
     )
 
-    if environment == "production":
-        op.execute(f"ALTER TABLE categories SET SCHEMA {SCHEMA};")
+    # if environment == "production":
+    #     op.execute(f"ALTER TABLE categories SET SCHEMA {SCHEMA};")
 
     op.create_table('users',
     sa.Column('id', sa.Integer(), nullable=False),
@@ -42,8 +42,8 @@ def upgrade():
     sa.UniqueConstraint('username')
     )
 
-    if environment == "production":
-        op.execute(f"ALTER TABLE users SET SCHEMA {SCHEMA};")
+    # if environment == "production":
+    #     op.execute(f"ALTER TABLE users SET SCHEMA {SCHEMA};")
 
     op.create_table('carts',
     sa.Column('id', sa.Integer(), nullable=False),
@@ -54,8 +54,8 @@ def upgrade():
     sa.PrimaryKeyConstraint('id')
     )
 
-    if environment == "production":
-        op.execute(f"ALTER TABLE carts SET SCHEMA {SCHEMA};")
+    # if environment == "production":
+    #     op.execute(f"ALTER TABLE carts SET SCHEMA {SCHEMA};")
 
     op.create_table('products',
     sa.Column('id', sa.Integer(), nullable=False),
@@ -71,8 +71,8 @@ def upgrade():
     sa.PrimaryKeyConstraint('id')
     )
 
-    if environment == "production":
-        op.execute(f"ALTER TABLE products SET SCHEMA {SCHEMA};")
+    # if environment == "production":
+    #     op.execute(f"ALTER TABLE products SET SCHEMA {SCHEMA};")
 
     op.create_table('cart_items',
     sa.Column('id', sa.Integer(), nullable=False),
@@ -84,8 +84,8 @@ def upgrade():
     sa.PrimaryKeyConstraint('id')
     )
 
-    if environment == "production":
-        op.execute(f"ALTER TABLE cart_items SET SCHEMA {SCHEMA};")
+    # if environment == "production":
+    #     op.execute(f"ALTER TABLE cart_items SET SCHEMA {SCHEMA};")
 
     op.create_table('favorites',
     sa.Column('user_id', sa.Integer(), nullable=False),
@@ -95,8 +95,8 @@ def upgrade():
     sa.PrimaryKeyConstraint('user_id', 'product_id')
     )
 
-    if environment == "production":
-        op.execute(f"ALTER TABLE favorites SET SCHEMA {SCHEMA};")
+    # if environment == "production":
+    #     op.execute(f"ALTER TABLE favorites SET SCHEMA {SCHEMA};")
 
     op.create_table('product_images',
     sa.Column('id', sa.Integer(), nullable=False),
@@ -106,8 +106,8 @@ def upgrade():
     sa.PrimaryKeyConstraint('id')
     )
 
-    if environment == "production":
-        op.execute(f"ALTER TABLE product_images SET SCHEMA {SCHEMA};")
+    # if environment == "production":
+    #     op.execute(f"ALTER TABLE product_images SET SCHEMA {SCHEMA};")
 
     # ### end Alembic commands ###
 
