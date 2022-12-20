@@ -11,5 +11,5 @@ favorites = db.Table(
     db.Column("product_id", db.Integer, db.ForeignKey(("products.id")), primary_key=True),
 )
 
-if environment == "production":
-    favorites.schema = SCHEMA
+# if environment == "production":
+#     favorites.schema = SCHEMA

@@ -8,8 +8,8 @@ from .joins import favorites
 class Product(db.Model):
     __tablename__ = "products"
 
-    if environment == "production":
-        __table_args__ = {'schema': SCHEMA}
+    # if environment == "production":
+    #     __table_args__ = {'schema': SCHEMA}
 
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(255), nullable=False)
@@ -63,8 +63,8 @@ class Product(db.Model):
 class Category(db.Model):
     __tablename__ = "categories"
 
-    if environment == "production":
-        __table_args__ = {'schema': SCHEMA}
+    # if environment == "production":
+    #     __table_args__ = {'schema': SCHEMA}
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), nullable=False)
@@ -86,8 +86,8 @@ class Category(db.Model):
 class ProductImage(db.Model):
     __tablename__ = "product_images"
 
-    if environment == "production":
-        __table_args__ = {'schema': SCHEMA}
+    # if environment == "production":
+    #     __table_args__ = {'schema': SCHEMA}
 
     id = db.Column(db.Integer, primary_key=True)
     product_id = db.Column(db.Integer, db.ForeignKey(("products.id")), nullable=False)

@@ -7,8 +7,8 @@ from .joins import favorites
 class User(db.Model, UserMixin):
     __tablename__ = 'users'
 
-    if environment == "production":
-        __table_args__ = {'schema': SCHEMA}
+    # if environment == "production":
+    #     __table_args__ = {'schema': SCHEMA}
 
     id = db.Column(db.Integer, primary_key=True)
     first_name = db.Column(db.String(50), nullable=False)
