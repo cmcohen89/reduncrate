@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useEffect } from "react";
 import "./UpperFooter.css";
 
 export default function UpperFooter() {
@@ -11,13 +10,12 @@ export default function UpperFooter() {
   const handleClick = (e) => {
     e.preventDefault();
     let errors = [];
-    let subscribed;
 
     if (
       email.length <= 0 ||
-      !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) ||
+      !/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email) ||
       (email.length <= 0 &&
-        !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+        !/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email))
     ) {
       errors.push("PLEASE ENTER A VALID EMAIL ADDRESS.");
       setDisplay(false);

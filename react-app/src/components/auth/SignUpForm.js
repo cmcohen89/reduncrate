@@ -20,7 +20,7 @@ const SignUpForm = () => {
     let errors = [];
     if (/\d/.test(first_name) || /\d/.test(last_name))
       errors.push("Your name has numbers in it? Doubt it.");
-    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+    if (!/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email))
       errors.push("That's not a valid email address. Told you we'd check.");
     if (username.length < 5)
       errors.push(

@@ -85,7 +85,7 @@ export default function LowerFooter() {
         ''
       )}
       <div className='lower-footer-link-list-team'>
-        <p className='lower-footer-link-list-title'>Meet the team</p>
+        <p className='lower-footer-link-list-title'>Development Team</p>
         <ul className='meet-team-ul'>
           {shuffledDevs && shuffledDevs.map((dev, i) =>
             i !== devs.length - 1 ? (

@@ -34,11 +34,30 @@ const SingleProduct = () => {
 
   const usDollar = Intl.NumberFormat("en-US");
 
+  function shuffle(array) {
+    let currentIndex = array.length, temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+      // Create a random index to pick from the original array
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      // Cache the value, and swap it with the current element
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+  }
+
   useEffect(() => {
     dispatch(getSingleProduct(id));
     (async function fetchProducts() {
       const allProducts = await dispatch(getProducts());
-      const shuffled = allProducts.Products.slice(0, 87).sort(() => 0.5 - Math.random());
+      const shuffled = shuffle(allProducts.Products);
       const selected = shuffled.slice(0, 8);
       setSuggested(selected);
     })();
@@ -152,9 +171,9 @@ const SingleProduct = () => {
           </div>
         </div>
         <div className="suggested-products">
-          {suggested ? suggested.map((product, idx) => (
+          {suggested.length ? suggested.map((product, idx) => (
             <SuggestedProduct key={idx} product={product} />
-          )) : <h1 style={{textAlign: "center", margin: "219px auto"}}>Loading Suggested Products...</h1>}
+          )) : <h1 style={{ textAlign: "center", margin: "219px auto" }}>Loading Suggested Products...</h1>}
         </div>
       </div>
       <Footer />

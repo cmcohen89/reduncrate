@@ -36,8 +36,8 @@ export default function SupplyHeader() {
             REDUNCRATE.
           </p>
           <div className="supply-icons">
-            <NavLink to="/search">
-              <i className="fa-solid fa-magnifying-glass"></i>
+            <NavLink to="/search" className='magnifying-glass-link'>
+              <i className="fa-solid fa-magnifying-glass supply-magnifying-glass"></i>
             </NavLink>
             {user ? (
               <button
