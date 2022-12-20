@@ -19,7 +19,7 @@ class User(db.Model, UserMixin):
 
     # RELATIONSHIPS:
     # user_cart <--> cart_user
-    # user_cart = db.relationship("Cart", back_populates="cart_user", cascade="all, delete")
+    user_cart = db.relationship("Cart", back_populates="cart_user", cascade="all, delete")
 
     # user_favorites <-- favorites --> users_who_favorited
     user_favorites = db.relationship("Product", back_populates="users_who_favorited", secondary=favorites, lazy="joined")
