@@ -34,30 +34,11 @@ const SingleProduct = () => {
 
   const usDollar = Intl.NumberFormat("en-US");
 
-  function shuffle(array) {
-    let currentIndex = array.length, temporaryValue, randomIndex;
-
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-
-      // Create a random index to pick from the original array
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-
-      // Cache the value, and swap it with the current element
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-
-    return array;
-  }
-
   useEffect(() => {
     dispatch(getSingleProduct(id));
     (async function fetchProducts() {
       const allProducts = await dispatch(getProducts());
-      const shuffled = shuffle(allProducts.Products);
+      const shuffled = allProducts.Products.slice(0, 87).sort(() => 0.5 - Math.random());
       const selected = shuffled.slice(0, 8);
       setSuggested(selected);
     })();
