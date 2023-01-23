@@ -3,7 +3,7 @@
 <p align="center">
 
   <p align="center">
-    <a href="https://reduncrate.onrender.com" target="_blank">- Check out the live site -</a>
+    <a href="https://reduncrate.herokuapp.com/" target="_blank">- Check out the live site -</a>
   </p>
     <br />
     <br />
